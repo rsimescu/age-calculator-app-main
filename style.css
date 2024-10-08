@@ -1,0 +1,319 @@
+:root {
+
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    caret-color: transparent;
+ }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Light-grey);
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--Off-white);
+    padding: 2rem;
+    border-radius: 20px;
+    border-bottom-right-radius: 100px;
+}
+
+
+.inputs {
+    display: flex;
+    gap: 20px;
+}
+
+input {
+    padding: 7px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 6.5rem;
+    background-color: var(--Off-white);
+    border: 1.5px solid var(--Light-grey);
+    margin-top: 5px;
+    border-radius: 7px;
+}
+
+input:focus {
+    
+    outline: none;
+}
+
+img {
+    width: 1.8rem;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--Purple);
+}
+
+img:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.middleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+hr {
+    width: 27rem;
+}
+
+.hr {
+    display: flex;
+    align-items: center;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+}
+
+.yearsText {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.monthsText {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.daysText {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+span {
+    color: var(--Purple);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.visible {
+    display: flex !important;
+    font-size: 0.65rem;
+    color: var(--Light-red) !important;
+}
+
+.error {
+    font-weight: 700;
+    color: var(--Light-red) !important;
+}
+
+.monthLabel {
+    color: black;
+    font-weight: 700;
+}
+
+.yearLabel {
+    color: black;
+    font-weight: 700;
+}
+
+.dayLabel {
+    color: black;
+    font-weight: 700;
+}
+
+.errorEmptyInputYear {
+    display: none;
+}
+
+.errorEmptyInputDay {
+    display: none;
+}
+
+.errorEmptyInputMonth {
+    display: none;
+}
+
+.errorValidYear {
+    display: none;
+}
+
+.errorValidMonth {
+    display: none;
+}
+
+.errorValidDay {
+    display: none;
+}
+
+.validDate{
+    display: none;
+}
+
+.errorBorder{
+    border: 1px solid var(--Light-red) !important;
+    outline: 1px solid var(--Light-red) !important;
+}
+
+@media screen and (max-width: 750px) {
+
+    .inputs{
+        justify-content: center;
+    }
+    
+    .middleContainer{
+        position: relative;
+        margin: 35px 0px;
+    }
+
+    .buttonContainer{
+        position: absolute;
+        left: 44%;
+    }
+
+    input{
+        width: 5.5rem;
+    }
+
+    hr{
+        width: 22rem;
+    }
+
+    .mainContainer{
+        padding: 1.5rem;
+    }
+
+    body{
+        align-items: flex-start;
+        padding-top: 25%;
+    }
+}
